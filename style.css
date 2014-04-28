@@ -1,0 +1,29 @@
+*{
+	font-family: 'Arvo', 'serif' !important; 
+}
+section {
+	background-color: #f0f0f0;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   	width: 80%;
+    margin: 0 auto;
+}
+#foreground{
+    position:relative;
+    top:300px;
+    z-index: 50;
+    background-color: #FFFFFF
+}
+#background{
+	position:fixed;
+    top:0px;
+    z-index: 1;
+    width: 100%;
+}
+section{
+
+
+    
+}

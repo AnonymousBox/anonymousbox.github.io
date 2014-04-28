@@ -1,11 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Arvo:400,400italic' rel='stylesheet' type='text/css'>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<meta charset="UTF-8">
 	<title></title>
 </head>
 <body>
-    AnonymousBox
-	
+    <div id="background">
+    	<img src="images/closeupscreen.jpg" width="100%">
+    </div>
+    <div id="foreground">
+    <h1><b>AnonymousBox</b></h1>
+        <nav class="navbar navbar-default" role="navigation">
+        <a href="#about">about</a>
+        <a href="#why">why</a>
+        </nav>
+    <section id="about">
+        <h2>About</h2>
+        <p>Anonymousbox is a large metal box which allows users to send messages to the next person who uses the box. While the box promps and invites a passerby to interacte with it the box is covertly mining data about the user. Collecting pictures, ultrasonic range finder readings, and temperature, the box is consuming much more that the user thinks they are inputting. At the end of the interactions all the information is bundled and sent to <a href= "http://anonymousbox.herokuapp.com">anonymousbox.herokuapp.com</a>.</p>
+    </section>
+	<section id="why">
+        <h2>Why?</h2>
+        Social media sites pose as innocuous, benign services which allow users to share and manipulate content. The intense data collection is hidden from the users of such websites. This piece means to show every step of that process. 
+        <p>From the simple technology (the arduino and old keyboard) used to gather data to the more complex technology used to parse and display (the laptop and node.js website) </p>
+    </section>
+    <section>
+        <h2>How?</h2>
+        The small screen and old keyboard are powered by an arduino duemilanove. An old laptop running xubuntu on a flash drive handles sending the data gathered by the arduino and webcams to the website. All the code for this project can be found <a href="https://github.com/AnonymousBox/">here</a>
+    </section>
+        <section>
+        <h2>Pictures</h2>
+        The small screen and old keyboard are powered by an arduino duemilanove. An old laptop running xubuntu on a flash drive handles sending the data gathered by the arduino and webcams to the website. All the code for this project can be found <a href="https://github.com/AnonymousBox/">here</a>
+    </section>
+        </div>
 </body>
 </html>
