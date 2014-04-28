@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/bower_components/blueimp-gallery/css/blueimp-gallery.min.css">
     <link href='http://fonts.googleapis.com/css?family=Arvo:400,400italic' rel='stylesheet' type='text/css'>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -21,7 +22,8 @@
         </nav>
     <section id="about">
         <h2>About</h2>
-        <p>Anonymousbox is a large metal box which allows users to send messages to the next person who uses the box. While the box promps and invites a passerby to interacte with it the box is covertly mining data about the user. Collecting pictures, ultrasonic range finder readings, and temperature, the box is consuming much more that the user thinks they are inputting. At the end of the interactions all the information is bundled and sent to <a href= "http://anonymousbox.herokuapp.com">anonymousbox.herokuapp.com</a>.</p>
+        <p>Anonymousbox was concieved of at Hampshire College in Advanced sculpture Spring 2014. Anonymousbox is a large metal box which allows users to send messages to the next person who uses the box. While the box promps and invites a passerby to interacte with it the box is covertly mining data about the user. 
+            <br>Collecting pictures, ultrasonic range finder readings, and temperature, the box is consuming much more that the user thinks they are inputting. At the end of the interactions all the information is bundled and sent to <a href= "http://anonymousbox.herokuapp.com">anonymousbox.herokuapp.com</a>.</p>
     </section>
 	<section id="why">
         <h2>Why?</h2>
@@ -34,8 +36,62 @@
     </section>
         <section>
         <h2>Pictures</h2>
-        The small screen and old keyboard are powered by an arduino duemilanove. An old laptop running xubuntu on a flash drive handles sending the data gathered by the arduino and webcams to the website. All the code for this project can be found <a href="https://github.com/AnonymousBox/">here</a>
+            <div id="links">
+    <a href="/images/boxrcc.jpg" title="">
+        <img src="images/thumbs/boxrcc.jpg" alt="">
+    </a>
+    <a href="/images/sideboxrcc.jpg" title="">
+        <img src="images/thumbs/sideboxrcc.jpg" alt="">
+    </a>
+    <a href="images/LemelsonFront.jpg" title="">
+        <img src="images/thumbs/LemelsonFront.jpg" alt="">
+    </a>
+    <a href="images/LemelsonSide.jpg" title="">
+        <img src="images/thumbs/LemelsonSide.jpg" alt="">
+    </a>
+    <a href="/images/LemelsonIncomplete.jpg" title="">
+        <img src="images/thumbs/LemelsonIncomplete.jpg" alt="">
+    </a>
+    <a href="/images/closeupscreen.jpg" title="">
+        <img src="images/thumbs/closeupscreen.jpg" alt="">
+    </a>
+    <a href="/images/wholebox.jpg" title="">
+        <img src="images/thumbs/wholebox.jpg" alt="">
+    </a>
+    <a href="/images/screeninthemaking.jpg" title="Frame for the screen">
+        <img src="images/thumbs/screeninthemaking.jpg" alt="Frame for the screen">
+    </a>
+    <a href="/images/Welding%20Frame.jpg" title="Welding The Frame">
+        <img src="images/thumbs/Welding%20Frame.jpg" alt="Welding The Frame">
+    </a>
+	<a href="/images/WeldingFrame2.jpg" title="Welding The Frame">
+        <img src="images/thumbs/WeldingFrame2.jpg" alt="Welding The Frame">
+    </a>
+    <a href="/images/Prototype.jpg" title="Cardboard Prototype">
+        <img src="images/thumbs/Prototype.jpg" alt="Cardboard Prototype">
+    </a>
+</div>
+        <div id="blueimp-gallery" class="blueimp-gallery">
+    		<div class="slides"></div>
+   			<h3 class="title"></h3>
+            <a class="prev">‹</a>
+            <a class="next">›</a>
+            <a class="close">×</a>
+            <a class="play-pause"></a>
+            <ol class="indicator"></ol>
+       </div>
     </section>
         </div>
+    <script type="application/javascript" src="bower_components/blueimp-gallery/js/blueimp-gallery.min.js"></script>
+    <script>
+document.getElementById('links').onclick = function (event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+        link = target.src ? target.parentNode : target,
+        options = {index: link, event: event},
+        links = this.getElementsByTagName('a');
+    blueimp.Gallery(links, options);
+};
+</script>
 </body>
 </html>
