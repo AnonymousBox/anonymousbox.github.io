@@ -20,6 +20,8 @@
             <ul class="nav navbar-nav">
                 <li><a href="#about">about</a></li>
                 <li><a href="#why">why</a></li>
+                <li><a href="#code">code</a></li>
+                <li><a href="#pictures">pictures</a></li>
             </ul>
         </nav>
     <section id="about">
@@ -35,11 +37,20 @@
         
         </p>
     </section>
-    <section>
+    <section id="how">
         <h2>How?</h2>
-        The part of this box which the user sees is a ST7565 screen and an old PS/2 keyboard. Hidden in the box is an arduino duemilanove which handles the users interactions. Also inside, an old gateway lt3103u laptop gutted of its harddrive and booting xubuntu from a flash drive. The laptop collects data from the arduino and captures three images using <a href="http://www.amazon.com/gp/product/B003VY4M42/ref=oh_details_o01_s00_i00?ie=UTF8&psc=1">U19-A Webcam</a> concealed behind the front frame.  The  All the code for this project can be found <a href="https://github.com/AnonymousBox/">here</a>
+        The part of this box which the user sees is a ST7565 screen and an old PS/2 keyboard. Hidden in the box is an arduino duemilanove which handles the users interactions. Also inside, an old gateway lt3103u laptop gutted of its harddrive and booting xubuntu from a flash drive. The laptop collects data from the arduino and captures three images using <a href="http://www.amazon.com/gp/product/B003VY4M42/ref=oh_details_o01_s00_i00?ie=UTF8&psc=1">U19-A Webcam</a> concealed behind the front frame.  
     </section>
-        <section>
+    <section id="code">
+        <h2>Code</h2>
+        <ul>
+            <li>The front end of the project was coded with arduino using the adafruit ST7565 and PS/2 keyboard library. </li>
+            <li>The backend was made using express on top of node, with angularjs to display the messages and search for them. </li>
+            <li>The laptop in the box is running a python script which takes pictures with the camera and uploads the images and data from the arduino to the website</li>
+    </ul>
+        The  All the code for this project can be found <a href="https://github.com/AnonymousBox/">here</a>
+    </section>
+        <section id="pictures">
         <h2>Pictures</h2>
             <div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
     		<div class="slides"></div>
