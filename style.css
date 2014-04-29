@@ -10,6 +10,9 @@ section {
     margin-bottom: 20px;
     
 }
+p{
+	text-indent: 5%;
+}
 #foreground{
     position:relative;
     top:300px;
