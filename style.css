@@ -2,6 +2,7 @@
 	font-family: 'Arvo', 'serif' !important; 
 }
 section {
+    font-size: 1em;
 	background-color: #f0f0f0;
     padding-left: 1em;
     padding-right: 1em;
@@ -22,4 +23,6 @@ section {
     z-index: 1;
     width: 100%;
 }
-s
+#links{
+    display: none;
+}

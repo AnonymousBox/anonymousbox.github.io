@@ -27,15 +27,27 @@
     </section>
 	<section id="why">
         <h2>Why?</h2>
-        Social media sites pose as innocuous, benign services which allow users to share and manipulate content. The intense data collection is hidden from the users of such websites. This piece means to show every step of that process. 
-        <p>From the simple technology (the arduino and old keyboard) used to gather data to the more complex technology used to parse and display (the laptop and node.js website) </p>
+        Social media sites pose as innocuous, benign services which allow users to share and manipulate content. Behind this front is systemetic data collection. Most services like this are opt-out not opt-in. Only the ones who are aware that their data is being collected can choose to opt-out This piece means to show every step of that process. 
+        <p>From the simple technology (the arduino and old keyboard) used to gather data to the more complex technology used to parse and display (the laptop and node.js website). Before the user starts typing the screen flashes for a half a second telling the user that 
+            <q>By using this box you agree to the terms on this site bit.ly/1f1yT2n</q>
+        
+        </p>
     </section>
     <section>
         <h2>How?</h2>
-        The small screen and old keyboard are powered by an arduino duemilanove. An old laptop running xubuntu on a flash drive handles sending the data gathered by the arduino and webcams to the website. All the code for this project can be found <a href="https://github.com/AnonymousBox/">here</a>
+        The part of this box which the user sees is a ST7565 screen and an old PS/2 keyboard. Hidden in the box is an arduino duemilanove which handles the users interactions. Also inside, an old gateway lt3103u laptop gutted of its harddrive and booting xubuntu from a flash drive. The laptop collects data from the arduino and captures three images using <a href="http://www.amazon.com/gp/product/B003VY4M42/ref=oh_details_o01_s00_i00?ie=UTF8&psc=1">U19-A Webcam</a> concealed behind the front frame.  The  All the code for this project can be found <a href="https://github.com/AnonymousBox/">here</a>
     </section>
         <section>
         <h2>Pictures</h2>
+            <div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
+    		<div class="slides"></div>
+   			<h3 class="title"></h3>
+            <a class="prev">‹</a>
+            <a class="next">›</a>
+            <a class="close">×</a>
+            <a class="play-pause"></a>
+            <ol class="indicator"></ol>
+       </div>
             <div id="links">
     <a href="/images/boxrcc.jpg" title="">
         <img src="images/thumbs/boxrcc.jpg" alt="">
@@ -71,27 +83,19 @@
         <img src="images/thumbs/Prototype.jpg" alt="Cardboard Prototype">
     </a>
 </div>
-        <div id="blueimp-gallery" class="blueimp-gallery">
-    		<div class="slides"></div>
-   			<h3 class="title"></h3>
-            <a class="prev">‹</a>
-            <a class="next">›</a>
-            <a class="close">×</a>
-            <a class="play-pause"></a>
-            <ol class="indicator"></ol>
-       </div>
+        
     </section>
         </div>
     <script type="application/javascript" src="bower_components/blueimp-gallery/js/blueimp-gallery.min.js"></script>
     <script>
-document.getElementById('links').onclick = function (event) {
-    event = event || window.event;
-    var target = event.target || event.srcElement,
-        link = target.src ? target.parentNode : target,
-        options = {index: link, event: event},
-        links = this.getElementsByTagName('a');
-    blueimp.Gallery(links, options);
-};
+
+        blueimp.Gallery(
+    document.getElementById('links').getElementsByTagName('a'),
+    {
+        container: '#blueimp-gallery-carousel',
+        carousel: true
+    }
+);
 </script>
 </body>
 </html>
