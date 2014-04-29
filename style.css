@@ -8,14 +8,17 @@ section {
     padding-right: 1em;
     margin-top: 20px;
     margin-bottom: 20px;
-   	width: 80%;
-    margin: 0 auto;
+    
 }
 #foreground{
     position:relative;
     top:300px;
     z-index: 50;
-    background-color: #FFFFFF
+    background-color: #FFFFFF;
+}
+#innerforeground{
+	margin: 0 auto;
+    width: 80%;
 }
 #background{
 	position:fixed;
