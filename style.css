@@ -4,11 +4,14 @@
 section {
     font-size: 1em;
 	background-color: #f0f0f0;
-    padding-left: 1em;
-    padding-right: 1em;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding-left: 3em;
+    padding-right: 3em;
+    margin-top: 40px;
+    padding-top: 10px;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
     
+    overflow: hidden;
 }
 p{
 	text-indent: 5%;

@@ -28,22 +28,24 @@
             </ul>
         </nav>
     <section id="about">
-        <h2>About</h2>
-        <p>Anonymous Box was concieved of and created at Hampshire College in Advanced sculpture  during the Spring 2014 semester. It was prompted in reaction to the Snowden leaks. Anonymousbox is a large metal box which allows users to send messages to the next person who uses the box. While the box promps and invites a passerby to interacte with it the box is covertly mining data about the user. </p>
-        <p><a href="/images/toungueexample.png" title="">
-        <img src="images/thumbs/toungueexample.png" alt="" align="right">
-    </a>Collecting not only the users interactions with the box. The box also collects pictures, distance readings, and temperature readings. The box is consuming much more that the user thinks they are inputting. At the end of the interactions all the information is bundled and sent to <a href= "http://anonymousbox.herokuapp.com">anonymousbox.herokuapp.com</a> 
-</p><p> The box restricts which kinds of messages the user can send through it, Only allowing messages less than 168 characters with no formatting and no numbers. This prompts the user to behave in a way similar to how they might behave "anonymously" on the internet. Because the box has so little functionality on the surface most users are confused as to why such a structure was built (hopefully) provoking them to think about the reasons behind the box and why there is a hole drilled into the sheet metal facing them. If the methods of interaction were more complex the box would have more closely resembled the way a social media website works but it would not prompt the user to look further as it does now.  </p>
+        <h2>About</h2><a href="/images/sideboxrcc.jpg" title="">
+        <img src="images/ThaBox.png" alt="" align="left">
+    </a>
+        <p>Anonymous Box was conceived of and created at Hampshire College in advanced sculpture during the Spring 2014 semester. It was prompted in reaction to the Snowden leaks. Anonymous Box is a large metal box which allows users to send messages to the next person who uses the box. While the box prompts and invites a passerby to interact with it, the box is covertly mining data about the user. </p>
+        <p>Collecting not only the users interactions with the box. The box also collects pictures, distance readings, and temperature readings. The box is consuming much more that the user thinks they are inputting. At the end of the interactions all the information is bundled and sent to <a href= "http://anonymousbox.herokuapp.com">anonymousbox.herokuapp.com</a> 
+</p><p> The box restricts which kinds of messages the user can send through it, Only allowing messages less than 168 characters with no formatting and no numbers. This prompts the user to behave in a way similar to how they might behave "anonymously" on the internet. Because the box has so little functionality on the surface most users are confused as to why such a structure was built provoking them to think about the reasons behind the box and why there is a hole drilled into the sheet metal facing them. If the methods of interaction were more complex the box would have more closely resembled the way a social media website works but it would not prompt the user to look further as it does now.  </p>
          </section>
 
 	<section id="why">
         <h2>Why</h2>
-        <p>Social media sites pose as innocuous, benign services which allow users to share and manipulate content. Behind this front is systemetic data collection. Most services like this are opt-out not opt-in, and only the ones who are aware that their data is being collected can choose to opt-out. Anonymous Box was an attempt at recreating this senario on a small scale in such a way that people would actively seach out and discover this intrusion of privacy</p>
-        <p>The simple technology (the arduino and old keyboard) I used to create data is anologous to the simple technology needed to use websites and tech services. The more complex technology used to parse and display (the laptop and node.js website) are analogous to the complex services needed to collect and sift trough the data. Before the user starts typing the screen flashes for a half a second telling the user that <p>
+        <p>Social media sites pose as innocuous, benign services which allow users to share and manipulate content. Behind this front is systematic data collection, vested interests, and a voyeuristic addiction to extracting every bit of information possible. Most tech services data collection policies are opt-out not opt-in, and only the ones who are aware that their data is being collected can choose to opt-out. Anonymous Box is an attempt at recreating this scenario on a small-scale in such a way that people would actively search out and discover this intrusion of privacy</p>
+        <a href="/images/toungueexample.png" title="">
+        <img src="images/thumbs/toungueexample.png" alt="" align="right">
+    </a><p>The simple technology used to create data (the arduino and old keyboard) is analogous to the simple technology needed to use social websites. The more complex technology used to parse and display the data (the hidden laptop and node.js website) are analogous to the complex services needed to collect and sift trough the data. <!-- Before the user starts typing the screen flashes for a half a second telling the user that <p>
        <q>By using this box you agree to the terms on this site bit.ly/1f1yT2n</q>
            </p>
-        <p> The
-        </p>
+        <p> Service providers have vested interests, 
+        </p> -->
        
         <p>
         	
@@ -54,13 +56,13 @@
         </section>
     <section id="how">
         <h2>How</h2>
-        <p>The part of this box which the user sees is a ST7565 screen and an old PS/2 keyboard. Hidden in the box is an arduino duemilanove which handles the users interactions. Also inside, an old gateway lt3103u laptop gutted of its harddrive and booting xubuntu from a flash drive. The laptop collects data from the arduino and captures three images using <a href="http://www.amazon.com/gp/product/B003VY4M42/ref=oh_details_o01_s00_i00?ie=UTF8&psc=1">U19-A Webcam</a> concealed behind the front frame.</p>  
+        <p>The part of this box which the user sees is a ST7565 screen and an old PS/2 keyboard. Hidden in the box is an arduino duemilanove which handles the users interactions. Also inside, an old gateway lt3103u laptop gutted of its hard drive and booting xubuntu from a flash drive. The laptop collects data from the arduino and captures three images using <a href="http://www.amazon.com/gp/product/B003VY4M42/ref=oh_details_o01_s00_i00?ie=UTF8&psc=1">U19-A Webcam</a> concealed behind the front frame. </p> 
     </section>
     <section id="code">
         <h2>Code</h2>
         <ul>
             <li>The front end of the project was coded with arduino using the adafruit ST7565 and PS/2 keyboard library. </li>
-            <li>The backend was made using express on top of node, with angularjs to display the messages and search for them. </li>
+            <li>The backend was made using express on top of node, with angular.js to display the messages and search for them. </li>
             <li>The laptop in the box is running a python script which takes pictures with the camera and uploads the images and data from the arduino to the website</li>
     </ul>
         The  All the code for this project can be found <a href="https://github.com/AnonymousBox/">here</a>
