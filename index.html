@@ -16,7 +16,7 @@
     </div>
     <div id="foreground">
      <div id="innerforeground">
-    <h1><b>AnonymousBox</b></h1>
+    <h1><b>Anonymous Box</b></h1>
         <nav class="navbar navbar-default" role="navigation">
             <ul class="nav navbar-nav">
                 <li><a href="#about">about</a></li>
@@ -24,24 +24,34 @@
                 <li><a href="#how">how</a></li>
                 <li><a href="#code">code</a></li>
                 <li><a href="#pictures">pictures</a></li>
+                <li><a href="#sketches">sketches </a></li>
             </ul>
         </nav>
     <section id="about">
         <h2>About</h2>
-        <p>Anonymousbox was concieved of at Hampshire College in Advanced sculpture Spring 2014. Anonymousbox is a large metal box which allows users to send messages to the next person who uses the box. While the box promps and invites a passerby to interacte with it the box is covertly mining data about the user. </p><p>Collecting not only the users interactions with the box. The box also collects pictures, distance readings, and temperature readings. The box is consuming much more that the user thinks they are inputting. At the end of the interactions all the information is bundled and sent to <a href= "http://anonymousbox.herokuapp.com">anonymousbox.herokuapp.com</a>.</p>
-    </section>
+        <p>Anonymous Box was concieved of and created at Hampshire College in Advanced sculpture  during the Spring 2014 semester. It was prompted in reaction to the Snowden leaks. Anonymousbox is a large metal box which allows users to send messages to the next person who uses the box. While the box promps and invites a passerby to interacte with it the box is covertly mining data about the user. </p>
+        <p><a href="/images/toungueexample.png" title="">
+        <img src="images/thumbs/toungueexample.png" alt="" align="right">
+    </a>Collecting not only the users interactions with the box. The box also collects pictures, distance readings, and temperature readings. The box is consuming much more that the user thinks they are inputting. At the end of the interactions all the information is bundled and sent to <a href= "http://anonymousbox.herokuapp.com">anonymousbox.herokuapp.com</a> 
+</p><p> The box restricts which kinds of messages the user can send through it, Only allowing messages less than 168 characters with no formatting and no numbers. This prompts the user to behave in a way similar to how they might behave "anonymously" on the internet. Because the box has so little functionality on the surface most users are confused as to why such a structure was built (hopefully) provoking them to think about the reasons behind the box and why there is a hole drilled into the sheet metal facing them. If the methods of interaction were more complex the box would have more closely resembled the way a social media website works but it would not prompt the user to look further as it does now.  </p>
+         </section>
+
 	<section id="why">
         <h2>Why</h2>
-        <p>Social media sites pose as innocuous, benign services which allow users to share and manipulate content. Behind this front is systemetic data collection. Most services like this are opt-out not opt-in. Only the ones who are aware that their data is being collected can choose to opt-out This piece means to show every step of that process. </p>
-        <p>From the simple technology (the arduino and old keyboard) used to gather data to the more complex technology used to parse and display (the laptop and node.js website). Before the user starts typing the screen flashes for a half a second telling the user that <p>
+        <p>Social media sites pose as innocuous, benign services which allow users to share and manipulate content. Behind this front is systemetic data collection. Most services like this are opt-out not opt-in, and only the ones who are aware that their data is being collected can choose to opt-out. Anonymous Box was an attempt at recreating this senario on a small scale in such a way that people would actively seach out and discover this intrusion of privacy</p>
+        <p>The simple technology (the arduino and old keyboard) I used to create data is anologous to the simple technology needed to use websites and tech services. The more complex technology used to parse and display (the laptop and node.js website) are analogous to the complex services needed to collect and sift trough the data. Before the user starts typing the screen flashes for a half a second telling the user that <p>
        <q>By using this box you agree to the terms on this site bit.ly/1f1yT2n</q>
            </p>
+        <p> The
+        </p>
+       
         <p>
         	
         </p>
-        
-        </p>
     </section>
+         <section id="findings">
+        <h2>Findings</h2>
+        </section>
     <section id="how">
         <h2>How</h2>
         <p>The part of this box which the user sees is a ST7565 screen and an old PS/2 keyboard. Hidden in the box is an arduino duemilanove which handles the users interactions. Also inside, an old gateway lt3103u laptop gutted of its harddrive and booting xubuntu from a flash drive. The laptop collects data from the arduino and captures three images using <a href="http://www.amazon.com/gp/product/B003VY4M42/ref=oh_details_o01_s00_i00?ie=UTF8&psc=1">U19-A Webcam</a> concealed behind the front frame.</p>  
@@ -55,6 +65,7 @@
     </ul>
         The  All the code for this project can be found <a href="https://github.com/AnonymousBox/">here</a>
     </section>
+    
         <section id="pictures">
         <h2>Pictures</h2>
             <div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
@@ -72,6 +83,10 @@
     </a>
     <a href="/images/sideboxrcc.jpg" title="">
         <img src="images/thumbs/sideboxrcc.jpg" alt="">
+    </a>
+                
+    <a href="images/insidebox.jpg" title="">
+        <img src="images/thumbs/insidebox.jpg" alt="">
     </a>
     <a href="images/LemelsonFront.jpg" title="">
         <img src="images/thumbs/LemelsonFront.jpg" alt="">
@@ -103,6 +118,9 @@
 </div>
         
     </section>
+        <section id="sketches">
+        	<h2>Sketches</h2>
+        </section>
         </div>
     </div>
     <script type="application/javascript" src="./bower_components/blueimp-gallery/js/blueimp-gallery.min.js"></script>
