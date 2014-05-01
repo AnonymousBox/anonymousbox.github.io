@@ -13,6 +13,9 @@ section {
     
     overflow: hidden;
 }
+img{
+    margin:10px 10px 10px 10px;
+}
 p{
 	text-indent: 5%;
 }
@@ -34,4 +37,9 @@ p{
 }
 #links{
     display: none;
+}
+section>h2{
+ border-bottom-width: 2px;
+ border-bottom-style: dashed;
+ border-bottom-color: #bcbaba;
 }

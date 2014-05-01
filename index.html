@@ -23,8 +23,10 @@
                 <li><a href="#why">why</a></li>
                 <li><a href="#how">how</a></li>
                 <li><a href="#code">code</a></li>
+                <li><a href="#notes">notes</a></li>
                 <li><a href="#pictures">pictures</a></li>
                 <li><a href="#sketches">sketches </a></li>
+                <li><a href="#contact">contact </a></li>
             </ul>
         </nav>
     <section id="about">
@@ -51,12 +53,14 @@
         	
         </p>
     </section>
-         <section id="findings">
-        <h2>Findings</h2>
+         <section id="notes">
+        <h2>Notes</h2>
+        <p>This was the largest scale project I have ever undertook by myself. I understood that it would be difficult but I completely underestimated how long it would take to build the physical structure and make all the parts interact together. I also wish I could have done more testing with people from the beginning a lot of unexpected bugs came to light the minute I put it out in public. From the beginning I should have been adding better system reseting and error handling. It would have saved me a lot of time.</p>
+        <p>The biggest problem with the structure is the less than desirable mounting of the arduino and laptop within the structure. Just because elements are hidden from the user doesn't mean they should be done hastily and without attention to design. Right now all the electronics are plugged into an unsoldered breadboard, the arduino is, very loosely, velcroed to a piece of plywood which is even more loosely velcroed to the hidden side of the sheet metal. I wish I had been thinking of potential enclosures and ways of fastening the components from the beginning.</p>
         </section>
     <section id="how">
         <h2>How</h2>
-        <p>The part of this box which the user sees is a ST7565 screen and an old PS/2 keyboard. Hidden in the box is an arduino duemilanove which handles the users interactions. Also inside, an old gateway lt3103u laptop gutted of its hard drive and booting xubuntu from a flash drive. The laptop collects data from the arduino and captures three images using <a href="http://www.amazon.com/gp/product/B003VY4M42/ref=oh_details_o01_s00_i00?ie=UTF8&psc=1">U19-A Webcam</a> concealed behind the front frame. </p> 
+        <p>The front-end of the box is a ST7565 screen and an old PS/2 keyboard and an ultrasonic range finder. Hidden in the box is an arduino duemilanove which handles all the users interactions and collects data from the ultrasonic range finder. Also inside, an old gateway lt3103u laptop gutted of its hard drive and booting xubuntu from a flash drive. The arduino sends the information via serial to the laptop which then takes three images using <a href="http://www.amazon.com/gp/product/B003VY4M42/ref=oh_details_o01_s00_i00?ie=UTF8&psc=1">U19-A Webcam</a> concealed behind the front frame. The computer then sends the informtion to the website</p> 
     </section>
     <section id="code">
         <h2>Code</h2>
@@ -122,6 +126,15 @@
     </section>
         <section id="sketches">
         	<h2>Sketches</h2>
+        </section>
+        
+        <section id="contact">
+        	<h2>Contact</h2>
+        	Email: wjs12 at hampshire.edu
+        	<br>
+        	Github: <a href="https://github.com/jakeschievink">https://github.com/jakeschievink</a>
+        	<br>
+        	Website: <a href="http://ecstaticpessimist.in">http://ecstaticpessimist.in</a>
         </section>
         </div>
     </div>
